@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class BuildingCosts extends StatelessWidget {
-  const BuildingCosts({super.key});
+class Map extends StatelessWidget {
+  const Map({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class BuildingCosts extends StatelessWidget {
         appBar: AppBar(
           toolbarHeight: 35,
           backgroundColor: Colors.lightBlue,
-          title: const Text("Building Costs"),
+          title: const Text("Interactive Map"),
         ),
           body: Stack(
           children: [
