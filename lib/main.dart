@@ -1,3 +1,5 @@
+
+import 'package:conan_app/src/screens/login/presentation/main_login.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,12 +11,14 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+    return const  MaterialApp(
+      home: SafeArea(
+        child: Scaffold(
+          body: Center(
+            child: HomeScreen()
+            ),
+          ),
       ),
-    );
+      );
   }
 }
