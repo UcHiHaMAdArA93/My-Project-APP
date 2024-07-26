@@ -61,6 +61,23 @@ class Weapons extends StatelessWidget {
                         ],
                       ),
                     ),
+                    const SizedBox(height: 2,),
+                     DecoratedBox(
+                      decoration:  const BoxDecoration(color: Colors.blue, shape: BoxShape.rectangle, borderRadius: BorderRadius.all(Radius.circular(16))),
+                      child: Row(
+                        children: [
+                        const Expanded(child: Text("Bow Of The Grey One", 
+                        style: TextStyle(fontSize: 20,
+                        ),
+                        ),
+                        ),
+                        Expanded(
+                          child: Image.asset("assets/images/bow_grey_ones.png", 
+                        height: 60, width: 60,),
+                        ),
+                        ],
+                      ),
+                    ),
                 ],
               ),
             ),
