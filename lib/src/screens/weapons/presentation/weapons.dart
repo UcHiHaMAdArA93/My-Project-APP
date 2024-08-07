@@ -1,3 +1,4 @@
+import 'package:conan_app/src/screens/weapons/data/weapons_data.dart';
 import 'package:flutter/material.dart';
 
 class Weapons extends StatelessWidget {
@@ -27,60 +28,39 @@ class Weapons extends StatelessWidget {
             ),
               Padding(
               padding: const EdgeInsets.all(16.0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                    DecoratedBox(
-                      decoration:  const BoxDecoration(color: Colors.blue, shape: BoxShape.rectangle, borderRadius: BorderRadius.all(Radius.circular(16))),
-                      child: Row(
-                        children: [
-                        const Expanded(child: Text("Abyssal Bow", 
-                        style: TextStyle(fontSize: 20,
-                        ),
-                        ),
-                        ),
-                        Expanded(child: Image.network("https://static.wikia.nocookie.net/conanexiles_gamepedia/images/a/ab/Icon_demon_bow.png/revision/latest?cb=20220910212053", 
-                        height: 60, width: 60,),
-                        ),
-                        ],
-                      ),
-                    ),
-                    const SizedBox(height: 2,),
-                     DecoratedBox(
-                      decoration:  const BoxDecoration(color: Colors.blue, shape: BoxShape.rectangle, borderRadius: BorderRadius.all(Radius.circular(16))),
-                      child: Row(
-                        children: [
-                        const Expanded(child: Text("Sword of Champions", 
-                        style: TextStyle(fontSize: 20,
-                        ),
-                        ),
-                        ),
-                        Expanded(child: Image.network("https://static.wikia.nocookie.net/conanexiles_gamepedia/images/e/e9/Icon_elder_shortsword.png/revision/latest?cb=20230625205931", 
-                        height: 60, width: 60,),
-                        ),
-                        ],
-                      ),
-                    ),
-                    const SizedBox(height: 2,),
-                     DecoratedBox(
-                      decoration:  const BoxDecoration(color: Colors.blue, shape: BoxShape.rectangle, borderRadius: BorderRadius.all(Radius.circular(16))),
-                      child: Row(
-                        children: [
-                        const Expanded(child: Text("Bow Of The Grey One", 
-                        style: TextStyle(fontSize: 20,
-                        ),
-                        ),
-                        ),
-                        Expanded(
-                          child: Image.asset("assets/images/bow_grey_ones.png", 
-                        height: 60, width: 60,),
-                        ),
-                        ],
-                      ),
-                    ),
-                ],
+              child:  GridView.builder(
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2, 
+        crossAxisSpacing: 10.0,
+        mainAxisSpacing: 10.0, 
+        childAspectRatio: 2 / 1, 
+      ),
+      itemCount: weaponDatabase.length,
+      itemBuilder: (context, index) {
+        return Card(
+          child: GridTile(
+            header: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                weaponDatabase[index].title,
+                style: const TextStyle(fontWeight: FontWeight.bold),
+                textAlign: TextAlign.center,
               ),
             ),
+            child: const Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                // Uncomment and adjust the following line if you have image paths
+                // weaponDatabase[index].imagePath.isNotEmpty
+                //     ? Image.network(weaponDatabase[index].imagePath)
+                //     : Container(),
+              ],
+            ),
+          ),
+        );
+      },
+              ),
+              ),
           ],
         ),
         ),
