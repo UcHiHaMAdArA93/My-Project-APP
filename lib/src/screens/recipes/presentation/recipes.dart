@@ -1,4 +1,4 @@
-import 'package:conan_app/src/screens/armor/presentation/armor.dart';
+import 'package:conan_app/src/screens/armor/presentation/armor_category_screen.dart';
 import 'package:conan_app/src/screens/benches/presentation/benches.dart';
 import 'package:conan_app/src/screens/weapons/presentation/categories.dart';
 import 'package:flutter/material.dart';
