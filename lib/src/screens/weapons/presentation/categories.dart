@@ -1,0 +1,88 @@
+import 'package:flutter/material.dart';
+
+class Categories extends StatelessWidget {
+  const Categories({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          toolbarHeight: 35,
+          backgroundColor: Colors.lightBlue,
+          title: const Text("Weapon Categories"),
+        ),
+          body: Stack(
+          children: [
+            Positioned.fill(
+              child: Container(
+                decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment(-0.30, -0.95),
+                    end: Alignment(0.3, 0.95),
+                    colors: [Color(0xFF4FACFE), Color(0xFF00F2FE)],
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: ListView(
+                children: [
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Card(
+                        child: Column(
+                        children: [
+                          Image.network("https://static.wikia.nocookie.net/conanexiles_gamepedia/images/f/fb/Icon_cimmerian_battleaxe.png/revision/latest/scale-to-width-down/54?cb=20180507204731"),
+                          const Text("One Handed Axes"),
+                        ],
+                        ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Card(
+                        child: Column(
+                          children: [
+                            Image.network("https://static.wikia.nocookie.net/conanexiles_gamepedia/images/d/d8/Icon_steel_mace.png/revision/latest/scale-to-width-down/54?cb=20180507215940"),
+                            const Text("One Handed Maces")
+                          ],
+                        ),
+                        ),
+                      )
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Card(
+                        child: Column(
+                        children: [
+                          Image.network("https://static.wikia.nocookie.net/conanexiles_gamepedia/images/e/e6/Icon_legendary_derketo_sword.png/revision/latest/scale-to-width-down/54?cb=20180507212410"),
+                          const Text("One Handed Swords"),
+                        ],
+                        ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Card(
+                        child: Column(
+                          children: [
+                            Image.network("https://static.wikia.nocookie.net/conanexiles_gamepedia/images/4/4e/Icon_composite_bow.png/revision/latest/scale-to-width-down/54?cb=20180507204807"),
+                            const Text("Bows")
+                          ],
+                        ),
+                        ),
+                      )
+                    ],
+                  ),
+                ],
+              ),
+            )
+          ],
+          ),
+        ),
+    ); 
+  }
+}

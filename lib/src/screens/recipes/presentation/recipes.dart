@@ -1,6 +1,6 @@
 import 'package:conan_app/src/screens/armor/presentation/armor.dart';
 import 'package:conan_app/src/screens/benches/presentation/benches.dart';
-import 'package:conan_app/src/screens/weapons/presentation/weapons.dart';
+import 'package:conan_app/src/screens/weapons/presentation/categories.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:ionicons/ionicons.dart';
@@ -64,7 +64,7 @@ class Recipes extends StatelessWidget {
                 child: OutlinedButton(onPressed: (){
                   Navigator.push(
                      context,
-                    MaterialPageRoute(builder: (context) => const Weapons()),
+                    MaterialPageRoute(builder: (context) => const Categories()),
                   );
                 }, 
                  style: OutlinedButton.styleFrom(

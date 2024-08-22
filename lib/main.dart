@@ -22,5 +22,9 @@ class MainApp extends StatelessWidget {
       );
   }
 }
+
+
+
+
 //themes - config folder
-// nav bar - widgest folder
+// nav bar - widget folder
