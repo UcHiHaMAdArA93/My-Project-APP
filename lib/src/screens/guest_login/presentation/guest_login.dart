@@ -1,6 +1,5 @@
 import 'package:conan_app/src/screens/building_costs/presentation/building_costs.dart';
 import 'package:conan_app/src/screens/recipes/presentation/recipes.dart';
-import 'package:conan_app/src/screens/map/presentation/map.dart';
 import 'package:flutter/material.dart';
 
 class GuestLogin extends StatefulWidget{
@@ -17,7 +16,6 @@ int currentIndex = 0;
 final List<Widget> screens =[
 const Recipes(),
 const BuildingCosts(),
-const Map(),
 ];
   @override
   Widget build(BuildContext context) {
@@ -33,7 +31,6 @@ const Map(),
     destinations: const [
       NavigationDestination(icon: Icon(Icons.construction, color: Colors.black), label: "Recipes"),
       NavigationDestination(icon: Icon(Icons.account_balance, color: Colors.black), label: "Building Costs"),
-      NavigationDestination(icon: Icon(Icons.map, color: Colors.black), label: "Interactive Map"),
     ],
     backgroundColor: Colors.lightBlue,
     ),
