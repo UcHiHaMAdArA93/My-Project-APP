@@ -11,7 +11,7 @@ class Tier1Buildings extends StatelessWidget {
         appBar: AppBar(
           toolbarHeight: 35,
           backgroundColor: Colors.lightBlue,
-          title: const Text("Weapons Recipes"),
+          title: const Text("T 1 Buildings"),
         ),
         body: Stack(
           children: [

@@ -10,7 +10,7 @@ class MediumArmor extends StatelessWidget {
         appBar: AppBar(
           toolbarHeight: 35,
           backgroundColor: Colors.lightBlue,
-          title: const Text("Light Armor"),
+          title: const Text("Medium Armor"),
         ),
         body: Stack(
           children: [

@@ -4,3 +4,11 @@ class BuildingCostsModel {
 
   BuildingCostsModel(this.title, this.imagePath);
 }
+
+
+class Costs{
+  String costs;
+  String imagePath;
+
+  Costs(this.costs, this.imagePath);
+}

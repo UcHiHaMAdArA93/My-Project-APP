@@ -13,7 +13,7 @@ class BuildingCosts extends StatelessWidget {
         appBar: AppBar(
           toolbarHeight: 35,
           backgroundColor: Colors.lightBlue,
-          title: const Text("Armor Recipes"),
+          title: const Text("Categories"),
         ),
         body: Stack(
           children: [

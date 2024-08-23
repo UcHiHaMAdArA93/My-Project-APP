@@ -10,7 +10,7 @@ class HeavyArmor extends StatelessWidget {
         appBar: AppBar(
           toolbarHeight: 35,
           backgroundColor: Colors.lightBlue,
-          title: const Text("Light Armor"),
+          title: const Text("Heavy Armor"),
         ),
         body: Stack(
           children: [
