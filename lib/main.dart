@@ -1,5 +1,5 @@
 
-import 'package:conan_app/src/screens/login/presentation/main_login.dart';
+import 'package:conan_app/src/screens/login/presentation/main_login_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

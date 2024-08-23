@@ -6,8 +6,7 @@ class HeavyArmor extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           toolbarHeight: 35,
           backgroundColor: Colors.lightBlue,
@@ -47,7 +46,6 @@ class HeavyArmor extends StatelessWidget {
             ),
           ],
         ),
-      ),
     );
   }
   Widget armorPart(String title, String imagePath) {

@@ -10,8 +10,7 @@ class Recipes extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           toolbarHeight:35,
           backgroundColor: Colors.lightBlue,
@@ -115,7 +114,6 @@ class Recipes extends StatelessWidget {
           ),
           ],
         ),
-      ),
     );
       
   }
