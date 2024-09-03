@@ -1,3 +1,4 @@
+import 'package:conan_app/src/screens/chat/presentation/chat_screen.dart';
 import 'package:conan_app/src/screens/guest_login/presentation/guest_login.dart';
 import 'package:flutter/material.dart';
 
@@ -26,7 +27,12 @@ class HomeScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 30),
                   OutlinedButton(
-                    onPressed: (){},
+                    onPressed: (){
+                      Navigator.push(
+                   context,
+                  MaterialPageRoute(builder: (context) => const ChatScreen()),
+                  );
+                    },
                     style: OutlinedButton.styleFrom(
                       backgroundColor: Colors.white, 
                       padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
