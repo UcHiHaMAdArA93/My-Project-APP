@@ -39,6 +39,13 @@ class HDSteel {
   HDSteel (this.title, this.imagePath);
 }
 
+class Bricks {
+  String title;
+  String imagePath;
+
+  Bricks (this.title, this.imagePath);
+}
+
 class HDBricks {
   String title;
   String imagePath;
