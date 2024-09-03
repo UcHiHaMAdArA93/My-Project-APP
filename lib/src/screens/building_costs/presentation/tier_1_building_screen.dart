@@ -39,7 +39,7 @@ class Tier1Buildings extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return GestureDetector(
                     onTap: (){
-                      showModalBottomSheet<void>(
+                      showModalBottomSheet(
             context: context,
             builder: (BuildContext context) {
               return Container(
