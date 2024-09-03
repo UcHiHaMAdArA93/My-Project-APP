@@ -1,4 +1,4 @@
-import 'package:conan_app/src/materials/domain/materials_domain.dart';
+import 'package:conan_app/src/screens/materials/domain/materials_domain.dart';
 
 final List<Stone> material = [
   Stone("Stone", "https://static.wikia.nocookie.net/conanexiles_gamepedia/images/7/7a/Icon_stone-1.png/revision/latest/scale-to-width-down/32?cb=20180507220003")

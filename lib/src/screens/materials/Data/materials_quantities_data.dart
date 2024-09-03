@@ -1,4 +1,4 @@
-import 'package:conan_app/src/materials/domain/materials_quantities_domain.dart';
+import 'package:conan_app/src/screens/materials/domain/materials_quantities_domain.dart';
 
 final List<Quantities> costs = [
   Quantities(1),
