@@ -44,6 +44,7 @@ class Tier2Buildings extends StatelessWidget {
             builder: (BuildContext context) {
               return Container(
                 decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(28)),
                   gradient: LinearGradient(
                     begin: Alignment(-0.30, -0.95),
                     end: Alignment(0.3, 0.95),
