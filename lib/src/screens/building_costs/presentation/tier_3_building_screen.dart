@@ -38,38 +38,56 @@ class Tier3Buildings extends StatelessWidget {
                 ),
                 itemCount: tier3Buildings.length,
                 itemBuilder: (context, index) {
-                  return Card(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Expanded(
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: tier3Buildings[index].imagePath.isNotEmpty
-                                ? SizedBox(
-                                  height: 50,
-                                  width: 50,
-                                  child: Image.network(
-                                      tier3Buildings[index].imagePath,
-                                      fit: BoxFit.contain,
-                                      filterQuality: FilterQuality.high,
-                                    ),
-                                )
-                                : Container(),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            tier3Buildings[index].title,
-                            style: const TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16.0,
+                  return GestureDetector(
+                    onTap: (){
+                      showModalBottomSheet<void>(
+            context: context,
+            builder: (BuildContext context) {
+              return Container(
+                decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment(-0.30, -0.95),
+                    end: Alignment(0.3, 0.95),
+                    colors: [Color(0xFF4FACFE), Color(0xFF00F2FE)],
+                  ),
+                ),
+              );
+            }
+                      );
+                    },
+                    child: Card(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Expanded(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: tier3Buildings[index].imagePath.isNotEmpty
+                                  ? SizedBox(
+                                    height: 50,
+                                    width: 50,
+                                    child: Image.network(
+                                        tier3Buildings[index].imagePath,
+                                        fit: BoxFit.contain,
+                                        filterQuality: FilterQuality.high,
+                                      ),
+                                  )
+                                  : Container(),
                             ),
-                            textAlign: TextAlign.center,
                           ),
-                        ),
-                      ],
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              tier3Buildings[index].title,
+                              style: const TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16.0,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   );
                 },
