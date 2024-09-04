@@ -44,6 +44,7 @@ class Tier3Buildings extends StatelessWidget {
             context: context,
             builder: (BuildContext context) {
               return Container(
+                height: 400,
                 decoration: const BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(28)),
                   gradient: LinearGradient(
