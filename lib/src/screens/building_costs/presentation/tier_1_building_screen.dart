@@ -38,7 +38,7 @@ class Tier1Buildings extends StatelessWidget {
                 itemCount: tier1Buildings.length,
                 itemBuilder: (context, index) {
                   return GestureDetector(
-                    onTap: (){
+                    onTap: (){ 
                       showModalBottomSheet(
             context: context,
             builder: (BuildContext context) {
@@ -49,7 +49,7 @@ class Tier1Buildings extends StatelessWidget {
                   gradient: LinearGradient(
                     begin: Alignment(-0.30, -0.95),
                     end: Alignment(0.3, 0.95),
-                    colors: [Color(0xFF4FACFE), Color(0xFF00F2FE)],
+                    colors: [Color(0xFF5C9B91), Colors.white],
                   ),
                 ),
               );
