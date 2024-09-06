@@ -123,6 +123,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.2.0"
+  inner_glow:
+    dependency: "direct main"
+    description:
+      name: inner_glow
+      sha256: "7ce4180198c86be89fb08b470572c7a78bd724d746e758cfe605d78e2a2209cd"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
   ionicons:
     dependency: "direct main"
     description:
@@ -203,6 +211,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.15.0"
+  neon_widgets:
+    dependency: "direct main"
+    description:
+      name: neon_widgets
+      sha256: "782f43b576b47c192eabd08ff66e16d136d339044ebe441337183dd4dc629daf"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
   path:
     dependency: transitive
     description:

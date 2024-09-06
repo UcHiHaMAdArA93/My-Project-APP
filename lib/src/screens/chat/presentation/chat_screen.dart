@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:neon_widgets/neon_widgets.dart';
 
 class ChatScreen extends StatelessWidget {
   const ChatScreen({super.key});
@@ -17,26 +17,47 @@ class ChatScreen extends StatelessWidget {
                   colors: [Color(0xFF4FACFE), Color(0xFF00F2FE)]
                 ),
               ),
-              child: const Center(
+              child:  Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
+                    const Padding(
+                      padding: EdgeInsets.all(12.0),
+                      child: NeonLeftMsgCard(
+                        backgroundColor: Colors.red,
+                        lightBlurRadius: 10,
+                        lightSpreadRadius: 3,
+                      ),
+                    ),
+                    const SizedBox(height: 20,),
+                    const Padding(
+                      padding: EdgeInsets.all(12.0),
+                      child: NeonRightMsgCard(
+                        backgroundColor: Colors.blue,
+                        lightBlurRadius: 10,
+                        lightSpreadRadius: 3,
+                      ),
+                    ),
                     Padding(
-                      padding:  EdgeInsets.all(32.0),
+                      padding:  const EdgeInsets.all(32.0),
                       child: TextField(
                         decoration: InputDecoration(
-                          labelText: "Your Message Here",
-                          border: OutlineInputBorder(),
+                          labelText: "Message",
+                          border: const OutlineInputBorder(),
+                          prefixIcon: IconButton(onPressed: (){}, 
+                          icon: const Icon(Icons.send, 
+                          color: Colors.black,),
+                          ),
                         ),
                       )
                     ),
                   ],
-                )
                 ),
-            )
+                ),
+            ),
           ),
-        ]
-      )
+        ],
+      ),
     );
   }
 }
