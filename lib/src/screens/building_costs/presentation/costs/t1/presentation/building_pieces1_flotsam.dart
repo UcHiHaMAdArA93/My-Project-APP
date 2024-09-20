@@ -1,10 +1,8 @@
 import 'package:conan_app/src/screens/building_costs/data/building_costs_data.dart';
-import 'package:conan_app/src/screens/building_costs/presentation/costs/t1/presentation/building_pieces1_flotsam.dart';
-import 'package:conan_app/src/screens/building_costs/presentation/costs/t1/presentation/building_pieces1_sandstone_screen.dart';
 import 'package:flutter/material.dart';
 
-class Tier1Buildings extends StatelessWidget {
-  const Tier1Buildings({super.key});
+class Tier1BuildingPiecesFlotsam  extends StatelessWidget {
+  const Tier1BuildingPiecesFlotsam({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +11,7 @@ class Tier1Buildings extends StatelessWidget {
         appBar: AppBar(
           toolbarHeight: 35,
           backgroundColor: Colors.lightBlue,
-          title: const Text("T 1 Buildings",),
+          title: const Text("Flotsam",),
         ),
         body: Stack(
           children: [
@@ -37,21 +35,26 @@ class Tier1Buildings extends StatelessWidget {
                   mainAxisSpacing: 10.0,
                   childAspectRatio: 1, 
                 ),
-                itemCount: tier1Buildings.length,
+                itemCount: flotsamT1Building.length,
                 itemBuilder: (context, index) {
                   return GestureDetector(
                     onTap: (){ 
-                       if (index % 2 == 0) {
-                       Navigator.push(
-                        context,
-                      MaterialPageRoute(builder: (context) => const Tier1BuildingPieces()),
-                       );
-                      } else {
-                   Navigator.push(
-                     context,
-                   MaterialPageRoute(builder: (context) => const Tier1BuildingPiecesFlotsam()), 
-    );
-  }
+                      showModalBottomSheet(
+            context: context,
+            builder: (BuildContext context) {
+              return Container(
+                height: 400,
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(28)),
+                  gradient: LinearGradient(
+                    begin: Alignment(-0.30, -0.95),
+                    end: Alignment(0.3, 0.95),
+                    colors: [Color(0xFF4FACFE), Color(0xFF00F2FE)],
+                  ),
+                ),
+              );
+            }
+                      );
                     },
                     child: Card(
                       elevation: 10,
@@ -61,12 +64,12 @@ class Tier1Buildings extends StatelessWidget {
                           Expanded(
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: tier1Buildings[index].imagePath.isNotEmpty
+                              child: flotsamT1Building[index].imagePath.isNotEmpty
                                   ? SizedBox(
                                     height: 50,
                                     width: 50,
                                     child: Image.network(
-                                        tier1Buildings[index].imagePath,
+                                        flotsamT1Building[index].imagePath,
                                         fit: BoxFit.contain,
                                         filterQuality: FilterQuality.high,
                                       ),
@@ -77,10 +80,10 @@ class Tier1Buildings extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Text(
-                              tier1Buildings[index].title,
+                              flotsamT1Building[index].costs,
                               style: const TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 16.0,
+                                fontSize: 12.0,
                               ),
                               textAlign: TextAlign.center,
                             ),
@@ -94,10 +97,7 @@ class Tier1Buildings extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    );
+      )
+    );   
   }
 }
-
-
-

@@ -77,5 +77,5 @@ final List<Costs> blackIceReinforcedT3Building = [
   Costs("Black Ice-Reinforced Wooden Ceiling\nInsulated Wood: 4\nSteel Reinforcement: 2\nBlack Ice: 9", "https://static.wikia.nocookie.net/conanexiles_gamepedia/images/5/55/Icon_tier3_ceiling_highlands.png/revision/latest?cb=20180507221741"),
   Costs("Black Ice-Reinforced Wooden Frame\nInsulated Wood: 3\nSteel Reinforcement: 2\nBlack Ice: 8", "https://static.wikia.nocookie.net/conanexiles_gamepedia/images/6/69/Icon_tier3_wall_window_highlands.png/revision/latest?cb=20180507221403"),
   Costs("Black Ice-Reinforced Wooden Doorframe\nInsulated Wood: 3\nSteel Reinforcement: 2\nBlack Ice: 8", "https://static.wikia.nocookie.net/conanexiles_gamepedia/images/0/0b/Icon_tier3_wall_frame_highlands.png/revision/latest?cb=20180507221830"),
-  Costs("Black Ice-Reinforced Wooden Door\nInsulated Wood: 6\nSteel Reinforcement: 3\nBlack Ice: 15", ""),
+  Costs("Black Ice-Reinforced Wooden Door\nInsulated Wood: 6\nSteel Reinforcement: 3\nBlack Ice: 15", "https://static.wikia.nocookie.net/conanexiles_gamepedia/images/7/78/Icon_tier3_door_highlands.png/revision/latest?cb=20180507221744"),
 ];

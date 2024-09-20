@@ -1,5 +1,7 @@
 
 import 'package:conan_app/src/screens/building_costs/data/building_costs_data.dart';
+import 'package:conan_app/src/screens/building_costs/presentation/costs/t3/pieces3_black_ice.dart';
+import 'package:conan_app/src/screens/building_costs/presentation/costs/t3/pieces3_reinforced_s.dart';
 import 'package:flutter/material.dart';
 
 class Tier3Buildings extends StatelessWidget {
@@ -40,22 +42,17 @@ class Tier3Buildings extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return GestureDetector(
                     onTap: (){
-                      showModalBottomSheet(
-            context: context,
-            builder: (BuildContext context) {
-              return Container(
-                height: 400,
-                decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(28)),
-                  gradient: LinearGradient(
-                    begin: Alignment(-0.30, -0.95),
-                    end: Alignment(0.3, 0.95),
-                    colors: [Color(0xFF4FACFE), Color(0xFF00F2FE)],
-                  ),
-                ),
-              );
-            }
-                      );
+                      if (index % 2 == 0) {
+                       Navigator.push(
+                        context,
+                      MaterialPageRoute(builder: (context) => const Tier3BuildingPiecesRS()),
+                       );
+                      } else {
+                   Navigator.push(
+                     context,
+                   MaterialPageRoute(builder: (context) => const Tier3BuildingPiecesBI()), 
+    );
+  }
                     },
                     child: Card(
                       child: Column(
