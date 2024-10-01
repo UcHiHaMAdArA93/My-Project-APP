@@ -54,3 +54,55 @@ final List<WeaponModel> bows = [
   WeaponModel("Star Metal Bow", "https://static.wikia.nocookie.net/conanexiles_gamepedia/images/7/70/Icon_star_metal_bow.png/revision/latest/scale-to-width-down/32?cb=20180507215907"),
   WeaponModel("String of the Legion", "https://static.wikia.nocookie.net/conanexiles_gamepedia/images/9/9d/Icon_legendary_bow_03.png/revision/latest/scale-to-width-down/32?cb=20180507212359"),
 ];
+
+final List<WeaponCosts> axes1H = [
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+];
+
+final List<WeaponCosts> maces1H =[
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+];
+
+final List<WeaponCosts> swords1H = [
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+];
+
+final List <WeaponCosts> costBows = [
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+  WeaponCosts("", ""),
+];

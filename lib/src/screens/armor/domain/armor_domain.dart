@@ -18,3 +18,10 @@ class ArmorModel {
   this.title5, this.imagePath5
   );
 }
+
+class ArmorCosts {
+  String cost;
+  String imagePath;
+
+  ArmorCosts(this.cost, this.imagePath);
+}

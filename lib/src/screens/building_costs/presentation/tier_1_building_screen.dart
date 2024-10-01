@@ -46,12 +46,13 @@ class Tier1Buildings extends StatelessWidget {
                         context,
                       MaterialPageRoute(builder: (context) => const Tier1BuildingPieces()),
                        );
-                      } else {
+                      } 
+                      else {
                    Navigator.push(
                      context,
                    MaterialPageRoute(builder: (context) => const Tier1BuildingPiecesFlotsam()), 
-    );
-  }
+                  );
+                 }
                     },
                     child: Card(
                       elevation: 10,
