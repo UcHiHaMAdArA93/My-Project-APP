@@ -1,4 +1,6 @@
 import 'package:conan_app/src/screens/armor/data/armor_data.dart';
+import 'package:conan_app/src/screens/armor/presentation/costs/khari_medium_cost.dart';
+import 'package:conan_app/src/screens/armor/presentation/costs/silent_legion_medium_cost.dart';
 import 'package:flutter/material.dart';
 
 class MediumArmor extends StatelessWidget {
@@ -30,15 +32,31 @@ class MediumArmor extends StatelessWidget {
               child: ListView.builder(
                 itemCount: mediumArmor.length,
                 itemBuilder: (context, index) {
-                  return Card(
-                    child: Column(
-                      children: [
-                        armorPart(mediumArmor[index].title1, mediumArmor[index].imagePath1),
-                        armorPart(mediumArmor[index].title2, mediumArmor[index].imagePath2),
-                        armorPart(mediumArmor[index].title3, mediumArmor[index].imagePath3),
-                        armorPart(mediumArmor[index].title4, mediumArmor[index].imagePath4),
-                        armorPart(mediumArmor[index].title5, mediumArmor[index].imagePath5),
-                      ],
+                  return GestureDetector(
+                    onTap: (){ 
+                       if (index % 2 == 0) {
+                       Navigator.push(
+                        context,
+                      MaterialPageRoute(builder: (context) => const SilentLegionMedium()),
+                       );
+                      } 
+                      else {
+                   Navigator.push(
+                     context,
+                   MaterialPageRoute(builder: (context) => const KhariMedium()), 
+                  );
+                 }
+                    },
+                    child: Card(
+                      child: Column(
+                        children: [
+                          armorPart(mediumArmor[index].title1, mediumArmor[index].imagePath1),
+                          armorPart(mediumArmor[index].title2, mediumArmor[index].imagePath2),
+                          armorPart(mediumArmor[index].title3, mediumArmor[index].imagePath3),
+                          armorPart(mediumArmor[index].title4, mediumArmor[index].imagePath4),
+                          armorPart(mediumArmor[index].title5, mediumArmor[index].imagePath5),
+                        ],
+                      ),
                     ),
                   );
                 },

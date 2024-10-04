@@ -1,4 +1,6 @@
 import 'package:conan_app/src/screens/armor/data/armor_data.dart';
+import 'package:conan_app/src/screens/armor/presentation/costs/khari_light_cost.dart';
+import 'package:conan_app/src/screens/armor/presentation/costs/silent_legion_cost.dart';
 import 'package:flutter/material.dart';
 
 class LightArmor extends StatelessWidget {
@@ -30,15 +32,31 @@ class LightArmor extends StatelessWidget {
               child: ListView.builder(
                 itemCount: lightArmor.length,
                 itemBuilder: (context, index) {
-                  return Card(
-                    child: Column(
-                      children: [
-                        armorPart(lightArmor[index].title1, lightArmor[index].imagePath1),
-                        armorPart(lightArmor[index].title2, lightArmor[index].imagePath2),
-                        armorPart(lightArmor[index].title3, lightArmor[index].imagePath3),
-                        armorPart(lightArmor[index].title4, lightArmor[index].imagePath4),
-                        armorPart(lightArmor[index].title5, lightArmor[index].imagePath5),
-                      ],
+                  return GestureDetector(
+                    onTap: (){ 
+                       if (index % 2 == 0) {
+                       Navigator.push(
+                        context,
+                      MaterialPageRoute(builder: (context) => const SilentLegion()),
+                       );
+                      } 
+                      else {
+                   Navigator.push(
+                     context,
+                   MaterialPageRoute(builder: (context) => const KhariLight()), 
+                  );
+                 }
+                    },
+                    child: Card(
+                      child: Column(
+                        children: [
+                          armorPart(lightArmor[index].title1, lightArmor[index].imagePath1),
+                          armorPart(lightArmor[index].title2, lightArmor[index].imagePath2),
+                          armorPart(lightArmor[index].title3, lightArmor[index].imagePath3),
+                          armorPart(lightArmor[index].title4, lightArmor[index].imagePath4),
+                          armorPart(lightArmor[index].title5, lightArmor[index].imagePath5),
+                        ],
+                      ),
                     ),
                   );
                 },

@@ -51,7 +51,7 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(height: 30),*/
                   OutlinedButton(
                    onPressed:() {
-                     Navigator.push(
+                     Navigator.pushReplacement(
                    context,
                   MaterialPageRoute(builder: (context) => const GuestLogin()),
                   );
