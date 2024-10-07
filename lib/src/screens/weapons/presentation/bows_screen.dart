@@ -1,4 +1,5 @@
 import 'package:conan_app/src/screens/weapons/data/weapons_data.dart';
+import 'package:conan_app/src/screens/weapons/presentation/costs/bows_costs.dart';
 import 'package:flutter/material.dart';
 
 class Bows extends StatelessWidget {
@@ -37,38 +38,46 @@ class Bows extends StatelessWidget {
                 ),
                 itemCount: bows.length,
                 itemBuilder: (context, index) {
-                  return Card(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Expanded(
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: bows[index].imagePath.isNotEmpty
-                                ? SizedBox(
-                                  height: 50,
-                                  width: 50,
-                                  child: Image.network(
-                                      bows[index].imagePath,
-                                      fit: BoxFit.contain,
-                                      filterQuality: FilterQuality.high,
-                                    ),
-                                )
-                                : Container(),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            bows[index].title,
-                            style: const TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16.0,
+                  return GestureDetector(
+                    onTap: (){
+                       Navigator.push(
+                        context,
+                      MaterialPageRoute(builder: (context,) => BowsCosts(index: index)),
+                       );
+                    },
+                    child: Card(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Expanded(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: bows[index].imagePath.isNotEmpty
+                                  ? SizedBox(
+                                    height: 50,
+                                    width: 50,
+                                    child: Image.network(
+                                        bows[index].imagePath,
+                                        fit: BoxFit.contain,
+                                        filterQuality: FilterQuality.high,
+                                      ),
+                                  )
+                                  : Container(),
                             ),
-                            textAlign: TextAlign.center,
                           ),
-                        ),
-                      ],
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              bows[index].title,
+                              style: const TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16.0,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   );
                 },
