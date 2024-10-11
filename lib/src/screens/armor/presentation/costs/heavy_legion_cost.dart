@@ -6,8 +6,7 @@ class SilentLegionHeavy  extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           toolbarHeight: 35,
           backgroundColor: const Color(0xffb29f94),
@@ -78,7 +77,6 @@ class SilentLegionHeavy  extends StatelessWidget {
             ),
           ],
         ),
-      )
-    );   
+      ); 
   }
 }

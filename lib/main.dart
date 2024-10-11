@@ -12,13 +12,11 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const  MaterialApp(
-      home: SafeArea(
-        child: Scaffold(
+      home: Scaffold(
           body: Center(
             child: HomeScreen()
             ),
           ),
-      ),
       );
   }
 }

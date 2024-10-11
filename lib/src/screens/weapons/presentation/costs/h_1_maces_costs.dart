@@ -10,8 +10,7 @@ class Handed1MacesCosts extends StatelessWidget {
   Widget build(BuildContext context) {
     final maceItem = maces1H[index];
 
-    return SafeArea(
-      child: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           toolbarHeight: 35,
           title: const Text("1 Handed Maces"),
@@ -69,7 +68,6 @@ class Handed1MacesCosts extends StatelessWidget {
             ),
           ],
         ),
-      ),
     );
   }
 }

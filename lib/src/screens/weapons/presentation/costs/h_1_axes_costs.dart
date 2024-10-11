@@ -10,8 +10,7 @@ class Handed1AxesCosts extends StatelessWidget {
   Widget build(BuildContext context) {
     final axeItem = axes1H[index];
 
-    return SafeArea(
-      child: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           toolbarHeight: 35,
           title: const Text("1 Handed Axes"),
@@ -69,7 +68,6 @@ class Handed1AxesCosts extends StatelessWidget {
             ),
           ],
         ),
-      ),
     );
   }
 }

@@ -10,8 +10,7 @@ class BenchesCosts extends StatelessWidget {
   Widget build(BuildContext context) {
     final benchItem = benchCost[index];
 
-    return SafeArea(
-      child: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           toolbarHeight: 35,
           backgroundColor: const Color(0xffb29f94),
@@ -69,7 +68,6 @@ class BenchesCosts extends StatelessWidget {
             ),
           ],
         ),
-      ),
     );
   }
 }

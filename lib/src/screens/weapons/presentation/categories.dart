@@ -9,8 +9,7 @@ class Categories extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           toolbarHeight: 35,
           title: const Text("Weapon Categories"),
@@ -111,7 +110,6 @@ class Categories extends StatelessWidget {
             )
           ],
           ),
-        ),
     ); 
   }
 }

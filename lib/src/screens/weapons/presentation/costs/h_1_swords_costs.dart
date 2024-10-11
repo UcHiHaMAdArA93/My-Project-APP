@@ -10,8 +10,7 @@ class Handed1HSwordsCosts extends StatelessWidget {
   Widget build(BuildContext context) {
     final swordItem = swords1H[index];
 
-    return SafeArea(
-      child: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           toolbarHeight: 35,
           title: const Text("1 Handed Swords"),
@@ -69,7 +68,6 @@ class Handed1HSwordsCosts extends StatelessWidget {
             ),
           ],
         ),
-      ),
     );
   }
 }

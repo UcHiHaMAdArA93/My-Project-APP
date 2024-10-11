@@ -10,8 +10,7 @@ class BowsCosts extends StatelessWidget {
   Widget build(BuildContext context) {
     final bowItem = costBows[index];
 
-    return SafeArea(
-      child: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           toolbarHeight: 35,
           title: const Text("Bows"),
@@ -69,7 +68,6 @@ class BowsCosts extends StatelessWidget {
             ),
           ],
         ),
-      ),
     );
   }
 }
