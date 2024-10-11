@@ -12,7 +12,7 @@ class Tier2Buildings extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           toolbarHeight: 35,
-          backgroundColor: Colors.lightBlue,
+          backgroundColor: const Color(0xffb29f94),
           title: const Text("Tier 2 Buildings"),
         ),
         body: Stack(
@@ -21,10 +21,11 @@ class Tier2Buildings extends StatelessWidget {
               child: Container(
                 decoration: const BoxDecoration(
                   gradient: LinearGradient(
-                    begin: Alignment(-0.30, -0.95),
-                    end: Alignment(0.3, 0.95),
-                    colors: [Color(0xFF4FACFE), Color(0xFF00F2FE)],
-                  ),
+          colors: [Color(0xff603813), Color(0xffb29f94)],
+          stops: [0.2, 1],
+          begin: Alignment.bottomCenter,
+          end: Alignment.topCenter,
+        )
                 ),
               ),
             ),

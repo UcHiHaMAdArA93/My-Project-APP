@@ -1,4 +1,4 @@
-import 'package:conan_app/src/screens/mods/eewa_mod/presentation/eewa_home_screen.dart';
+import 'package:conan_app/src/screens/mods/eewa_mod/presentation/Home/eewa_home_screen.dart';
 import 'package:flutter/material.dart';
 
 class ModsList extends StatelessWidget {
@@ -8,7 +8,7 @@ class ModsList extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Mods Guides"),
-        backgroundColor: Colors.lightBlue,
+        backgroundColor: const Color(0xffb29f94),
       ),
       body:  Stack(
         children: [
@@ -16,10 +16,11 @@ class ModsList extends StatelessWidget {
             child: Container(
               decoration: const BoxDecoration(
                 gradient: LinearGradient(
-                  begin: Alignment(-0.30, -0.95),
-                  end: Alignment(0.3, 0.95),
-                  colors: [Color(0xFF4FACFE), Color(0xFF00F2FE)]
-                ),
+          colors: [Color(0xff603813), Color(0xffb29f94)],
+          stops: [0.2, 1],
+          begin: Alignment.bottomCenter,
+          end: Alignment.topCenter,
+        )
               ),
             )
           ),

@@ -13,19 +13,20 @@ class Categories extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           toolbarHeight: 35,
-          backgroundColor: Colors.lightBlue,
           title: const Text("Weapon Categories"),
-        ),
-          body: Stack(
-          children: [
-            Positioned.fill(
-              child: Container(
-                decoration: const BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment(-0.30, -0.95),
-                    end: Alignment(0.3, 0.95),
-                    colors: [Color(0xFF4FACFE), Color(0xFF00F2FE)],
-                  ),
+        backgroundColor: const Color(0xffb29f94),
+      ),
+      body:  Stack(
+        children: [
+          Positioned.fill(
+            child: Container(
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+          colors: [Color(0xff603813), Color(0xffb29f94)],
+          stops: [0.2, 1],
+          begin: Alignment.bottomCenter,
+          end: Alignment.topCenter,
+        )
                 ),
               ),
             ),

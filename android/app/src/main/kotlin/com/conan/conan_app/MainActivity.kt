@@ -1,4 +1,4 @@
-package com.example.conan_app
+package com.conan.conan_app
 
 import io.flutter.embedding.android.FlutterActivity
 

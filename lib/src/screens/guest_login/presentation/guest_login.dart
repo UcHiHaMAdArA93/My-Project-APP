@@ -32,7 +32,7 @@ const BuildingCosts(),
       NavigationDestination(icon: Icon(Icons.construction, color: Colors.black), label: "Recipes"),
       NavigationDestination(icon: Icon(Icons.account_balance, color: Colors.black), label: "Building Costs"),
     ],
-    backgroundColor: Colors.lightBlue,
+    backgroundColor: const Color(0xff603813),
     ),
     body: Center(
       child: screens[currentIndex],

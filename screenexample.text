@@ -1,0 +1,208 @@
+import 'package:flutter/material.dart';
+
+class ChaosMouthAltarScreen extends StatelessWidget {
+  const ChaosMouthAltarScreen({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Chaosmouth Altar"),
+        backgroundColor: Colors.lightBlue,
+      ),
+      body:  Stack(
+        children: [
+          Positioned.fill(
+            child: Container(
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment(-0.30, -0.95),
+                  end: Alignment(0.3, 0.95),
+                  colors: [Color(0xFF4FACFE), Color(0xFF00F2FE)]
+                ),
+              ),
+            )
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    height: 300,
+                    width: 250,
+                    child: Image.network(""),
+                    ),
+                    const SizedBox(height: 10,),
+                    const Text(""),
+                ],
+              ),
+            ),
+          )
+        ]
+      )
+    );
+  }
+}
+
+
+
+
+
+
+import 'package:flutter/material.dart';
+
+class ConjurationPillarScreen extends StatelessWidget {
+  const ConjurationPillarScreen({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Conjuration Pillar"),
+        backgroundColor: Colors.lightBlue,
+      ),
+      body:  Stack(
+        children: [
+          Positioned.fill(
+            child: Container(
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment(-0.30, -0.95),
+                  end: Alignment(0.3, 0.95),
+                  colors: [Color(0xFF4FACFE), Color(0xFF00F2FE)]
+                ),
+              ),
+            )
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Center(
+              child: ListView(
+                children: [Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                      height: 300,
+                      width: 250,
+                      child: Image.network(""),
+                      ),
+                      const SizedBox(height: 10,),
+                      const Text(""),
+                  ],
+                ),
+                ]
+              ),
+            ),
+          )
+        ]
+      )
+    );
+  }
+}
+
+
+
+
+
+
+
+
+OutlinedButton(onPressed: (){
+                  Navigator.push(
+                   context,
+                  MaterialPageRoute(builder: (context) => const HanumanAltarScreen()),
+                  );
+                },
+                style: OutlinedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                      elevation: 10,
+                      shadowColor: Colors.black,
+                    ),
+                child: const Text("Hanuman Altar",
+                style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                        fontFamily: "Roboto",
+                        fontWeight: FontWeight.w700,
+                      ),
+                ),
+                ),
+                const SizedBox(height: 10,),
+                OutlinedButton(onPressed: (){
+                  Navigator.push(
+                   context,
+                  MaterialPageRoute(builder: (context) => const ConjurationPillarScreen()),
+                  );
+                },
+                style: OutlinedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                      elevation: 10,
+                      shadowColor: Colors.black,
+                    ),
+                child: const Text("Conjuration Pillar",
+                style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                        fontFamily: "Roboto",
+                        fontWeight: FontWeight.w700,
+                      ),
+                ),
+                ),
+                const SizedBox(height: 10,),
+                OutlinedButton(onPressed: (){
+                  Navigator.push(
+                   context,
+                  MaterialPageRoute(builder: (context) => const PerilousValleyScreen()),
+                  );
+                },
+                style: OutlinedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                      elevation: 10,
+                      shadowColor: Colors.black,
+                    ),
+                child: const Text("Perilous Valley",
+                style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                        fontFamily: "Roboto",
+                        fontWeight: FontWeight.w700,
+                      ),
+                ),
+                ),
+                const SizedBox(height: 10,),
+                OutlinedButton(onPressed: (){
+                  Navigator.push(
+                   context,
+                  MaterialPageRoute(builder: (context) => const AncientStygianRuinsScreen()),
+                  );
+                },
+                style: OutlinedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                      elevation: 10,
+                      shadowColor: Colors.black,
+                    ),
+                child: const Text("Ancient Stygian Ruins",
+                style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                        fontFamily: "Roboto",
+                        fontWeight: FontWeight.w700,
+                      ),
+                ),
+                ),
+        
+
+
+
+
+            LinearGradient(
+          colors: [Color(0xff603813), Color(0xffb29f94)],
+          stops: [0.2, 1],
+          begin: Alignment.bottomCenter,
+          end: Alignment.topCenter,
+        )
+       
