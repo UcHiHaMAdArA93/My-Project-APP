@@ -20,17 +20,18 @@ const BuildingCosts(),
   @override
   Widget build(BuildContext context) {
   return Scaffold(
-    bottomNavigationBar: NavigationBar(
-    onDestinationSelected: (int index) {
-      setState(() {
-        currentIndex = index;
-      });
-    },
-    indicatorColor: Colors.white,
-    selectedIndex: currentIndex,
-    destinations: const [
-      NavigationDestination(icon: Icon(Icons.construction, color: Colors.black), label: "Recipes"),
-      NavigationDestination(icon: Icon(Icons.account_balance, color: Colors.black), label: "Building Costs"),
+    bottomNavigationBar: BottomNavigationBar(
+    currentIndex: currentIndex,
+        onTap: (int index) {
+          setState(() {
+            currentIndex = index;
+          });
+        },
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.grey,
+    items:  [
+      BottomNavigationBarItem(icon: Icon(Icons.construction, color: currentIndex == 0 ? Colors.white : Colors.grey), label: "Recipes"),
+      BottomNavigationBarItem(icon: Icon(Icons.account_balance, color: currentIndex == 1 ? Colors.white : Colors.grey), label: "Building Costs"),
     ],
     backgroundColor: const Color(0xff603813),
     ),

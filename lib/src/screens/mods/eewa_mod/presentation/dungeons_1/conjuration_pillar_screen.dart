@@ -37,7 +37,7 @@ class ConjurationPillarScreen extends StatelessWidget {
                       child: Image.network("https://steamuserimages-a.akamaihd.net/ugc/2295213908350352762/B692A69CDF6701F323DA52A158478A1BF8CC2891/"),
                       ),
                       const SizedBox(height: 10,),
-                      const Text("With one of the corrupted souls, go to the Conjuration Room. It's beneath The Unnamed City and is entered through a grotto in the northwest part of the city. To enter, you'll need to carry an Acheronian Sigil Key in your Inventory, which falls into the loot of magical monsters (Bounties) and EEWA dungeon monsters. Enter the room and you will see the Conjuration Pillar in the center. Depending on the soul you put into it, you'll summon a different enemy that will unlock certain weapons"),
+                      const Text("With one of the corrupted souls, go to the Conjuration Room. It's beneath The Unnamed City and is entered through a grotto in the northwest part of the city. To enter, you'll need to carry an Acheronian Sigil Key in your Inventory, which falls into the loot of magical monsters (Bounties) and EEWA dungeon monsters. Enter the room and you will see the Conjuration Pillar in the center. Depending on the soul you put into it, you'll summon a different enemy that will unlock certain weapons", style: TextStyle(color: Color(0xFFD7CCC8)),),
                   ],
                 ),
                 ]

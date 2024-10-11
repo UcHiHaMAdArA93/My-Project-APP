@@ -59,7 +59,7 @@ class ConjurationPillarScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Conjuration Pillar"),
-        backgroundColor: Colors.lightBlue,
+        backgroundColor: Color(0xffb29f94),
       ),
       body:  Stack(
         children: [
@@ -67,10 +67,11 @@ class ConjurationPillarScreen extends StatelessWidget {
             child: Container(
               decoration: const BoxDecoration(
                 gradient: LinearGradient(
-                  begin: Alignment(-0.30, -0.95),
-                  end: Alignment(0.3, 0.95),
-                  colors: [Color(0xFF4FACFE), Color(0xFF00F2FE)]
-                ),
+          colors: [Color(0xff603813), Color(0xffb29f94)],
+          stops: [0.2, 1],
+          begin: Alignment.bottomCenter,
+          end: Alignment.topCenter,
+        )
               ),
             )
           ),
@@ -206,3 +207,6 @@ OutlinedButton(onPressed: (){
           end: Alignment.topCenter,
         )
        
+
+
+       , style: TextStyle(color: Color(0xFFD7CCC8)),

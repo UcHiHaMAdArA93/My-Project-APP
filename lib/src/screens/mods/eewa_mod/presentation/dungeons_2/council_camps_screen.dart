@@ -35,7 +35,7 @@ class SmallCouncilCamps extends StatelessWidget {
                     child: Image.network("https://steamuserimages-a.akamaihd.net/ugc/2295213908350353461/5B76C8563A5FEF3761A3401F587BFB2C72031067/"),
                     ),
                     const SizedBox(height: 10,),
-                    const Text("Recommended minimum level 200\nLocated in the snowy mountains, north of the Frostneedle Forest\nIn the image above you can see the two camps, one of them in the foreground and the other in the distance. Both these small camps and the Council of Wolves are on the edge of different precipices of the snowy mountains. In these camps you'll find a couple of Council of Wolves fighters (humans)."),
+                    const Text("Recommended minimum level 200\nLocated in the snowy mountains, north of the Frostneedle Forest\nIn the image above you can see the two camps, one of them in the foreground and the other in the distance. Both these small camps and the Council of Wolves are on the edge of different precipices of the snowy mountains. In these camps you'll find a couple of Council of Wolves fighters (humans).", style: TextStyle(color: Color(0xFFD7CCC8)),),
                 ],
               ),
             ),

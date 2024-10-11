@@ -35,7 +35,7 @@ class MeruvianCampScreen extends StatelessWidget {
                       child: Image.network("https://steamuserimages-a.akamaihd.net/ugc/2295213908350352788/3A4FEC0458622F8AB45E84B09FE463F410492636/"),
                       ),
                       const SizedBox(height: 10,),
-                      const Text("Recommended minimum level 200\nLocated in the Highlands, in an Acheronian building east of The Great Dam. You will see the entrance on its east face.\nThis area doesn't have a loading screen. In addition to some Meruvian Sentinels (human), you'll find an elite Afflicted Being (corrupted colossal shaleback) inside. Everyone will drop EEWA materials. Meruvian Sentry (fighter or archer) enslavable humans may appear."),
+                      const Text("Recommended minimum level 200\nLocated in the Highlands, in an Acheronian building east of The Great Dam. You will see the entrance on its east face.\nThis area doesn't have a loading screen. In addition to some Meruvian Sentinels (human), you'll find an elite Afflicted Being (corrupted colossal shaleback) inside. Everyone will drop EEWA materials. Meruvian Sentry (fighter or archer) enslavable humans may appear.", style: TextStyle(color: Color(0xFFD7CCC8)),),
                   ],
                 ),
             ),

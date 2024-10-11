@@ -28,14 +28,14 @@ class EewaIntroductionScreen extends StatelessWidget {
             child: Center(
               child: ListView(
                 children: const [
-                  Text("The EEWA is a mod that expands the user experience and lengthens the end of the game. This guide is for the Exiled Lands map (not Siptah)."),
+                  Text("The EEWA is a mod that expands the user experience and lengthens the end of the game. This guide is for the Exiled Lands map (not Siptah).", style: TextStyle(color: Color(0xFFD7CCC8), fontSize: 18),),
                   SizedBox(height: 6,),
                   Divider(height: 6,
-                  color: Colors.black,
+                  color: Color(0xffb29f94),
                   thickness: 2,
                   ),
                   SizedBox(height: 6,),
-                  Text("How to use the Altar of Hanuman, the Chaosmouth Altar and the Conjuration Pillar. New dungeons that will help you advance from level 60, new NPCs, items and keys."),
+                  Text("How to use the Altar of Hanuman, the Chaosmouth Altar and the Conjuration Pillar. New dungeons that will help you advance from level 60, new NPCs, items and keys.", style: TextStyle(color: Color(0xFFD7CCC8), fontSize: 18),),
                 ],
               ),
             ),

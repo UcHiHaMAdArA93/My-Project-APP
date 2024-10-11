@@ -14,8 +14,7 @@ class Recipes extends StatelessWidget {
         appBar: AppBar(
           toolbarHeight:35,
           backgroundColor: const Color(0xffb29f94),
-          title: const Text("Recipes",
-          
+          title: const Text("Recipes"      
           ),
         ),
           body: Stack(

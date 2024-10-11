@@ -35,7 +35,7 @@ class ChaosMouthAltarScreen extends StatelessWidget {
                     child: Image.network("https://steamuserimages-a.akamaihd.net/ugc/2295213908350352717/852E8F0B0AB1A73D826010A9C2B770360EA2FC97/"),
                     ),
                     const SizedBox(height: 10,),
-                    const Text("The Chaosmouth, it's south of New Asagarth (climbing the Acheronian wall). The Chaosmouth Altar is part of the Acheronian ruins of the wall. Insert either the six Artifacts or the three Corrupted Keystone Shards into it. A Keystone will immediately be created. DO NOT CONSUME IT, because the game will end."),
+                    const Text("The Chaosmouth, it's south of New Asagarth (climbing the Acheronian wall). The Chaosmouth Altar is part of the Acheronian ruins of the wall. Insert either the six Artifacts or the three Corrupted Keystone Shards into it. A Keystone will immediately be created. DO NOT CONSUME IT, because the game will end.", style: TextStyle(color: Color(0xFFD7CCC8)),),
                 ],
               ),
             ),
